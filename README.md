@@ -1,0 +1,2 @@
+# swiggy-mcp-server-manifest
+

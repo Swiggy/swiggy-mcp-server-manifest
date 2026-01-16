@@ -4,7 +4,7 @@ Order food, groceries and more through intelligent MCP server integrations.
 
 ## Supported Features
 
-### 🍔 Swiggy Food
+### Swiggy Food
 
 Your favorite restaurants delivered to your doorstep.
 
@@ -18,7 +18,7 @@ Your favorite restaurants delivered to your doorstep.
 
 ---
 
-### 🛒 Instamart
+### Instamart
 
 10 min delivery for all your essentials at your fingertips.
 
@@ -29,6 +29,19 @@ Your favorite restaurants delivered to your doorstep.
 - **`get_cart`** - Fetches current cart state with items, pricing, and bill breakdown
 - **`update_cart`** - Replaces entire cart with specified items
 - **`checkout`** - Creates order and confirms payment (currently supports COD only)
+
+---
+
+### Dineout
+
+Reserve tables at your favorite restaurants instantly.
+
+**Available Tools:**
+
+- **`search_restaurants`** - Find restaurants by name, cuisine, or locality
+- **`get_restaurant_details`** - View restaurant info, menu, ratings, and exclusive offers
+- **`get_available_slots`** - Check available booking time slots for a specific date
+- **`book_table`** - Reserve a table instantly (supports free bookings only)
 
 ## Getting Started
 
@@ -71,6 +84,10 @@ cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-instamart&config=eyJ0
     "swiggy-food": {
       "type": "http",
       "url": "https://mcp.swiggy.com/food"
+    },
+    "swiggy-dineout": {
+      "type": "http",
+      "url": "https://mcp.swiggy.com/dineout"
     }
   }
 }
@@ -94,6 +111,10 @@ Save the file and reload Cursor to activate the integration.
     "swiggy-food": {
       "type": "http",
       "url": "https://mcp.swiggy.com/food"
+    },
+    "swiggy-dineout": {
+      "type": "http",
+      "url": "https://mcp.swiggy.com/dineout"
     }
   }
 }
@@ -115,6 +136,10 @@ Add this to your MCP manifest:
     "swiggy-food": {
       "type": "http",
       "url": "https://mcp.swiggy.com/food"
+    },
+    "swiggy-dineout": {
+      "type": "http",
+      "url": "https://mcp.swiggy.com/dineout"
     }
   }
 }
@@ -122,9 +147,9 @@ Add this to your MCP manifest:
 
 ## Workflows You Can Try
 
-### 🍔 Food Ordering Workflows
+### Food Ordering Workflows
 
-#### 🍕 Cuisine Discovery
+#### Cuisine Discovery
 > Craving something specific, explore options by cuisine
 
 ```
@@ -132,7 +157,7 @@ I'm craving some authentic South Indian food. Find me the best-rated restaurants
 nearby that serve dosas and filter coffee. Show me their top dishes.
 ```
 
-#### 🌙 Late Night Cravings
+#### Late Night Cravings
 > Finding restaurants open late
 
 ```
@@ -140,7 +165,7 @@ It's midnight and I'm hungry. What restaurants are still open near my home?
 I want something quick - maybe biryani or rolls. Show me options with delivery time under 30 mins.
 ```
 
-#### 👥 Team Lunch Order
+#### Team Lunch Order
 > Ordering food for the office team
 
 ```
@@ -151,7 +176,7 @@ I need to order lunch for 8 people at the office. We want a mix of:
 Budget is around ₹300 per person. Suggest a restaurant and build the order.
 ```
 
-#### 🥗 Healthy Meal Finder
+#### Healthy Meal Finder
 > Looking for nutritious options
 
 ```
@@ -162,7 +187,7 @@ I'm trying to eat healthy. Find me restaurants that serve:
 Show me options with calorie information if available. Deliver to home.
 ```
 
-#### 💸 Budget Meals
+#### Budget Meals
 > Delicious food without breaking the bank
 
 ```
@@ -170,7 +195,7 @@ I want a filling dinner under ₹150. Show me the best value meals nearby -
 could be a combo, thali, or biryani. Sort by ratings.
 ```
 
-#### ⚡ Quick Lunch
+#### Bolt
 > Fast delivery during work hours
 
 ```
@@ -180,9 +205,9 @@ that serve good North Indian or Chinese food. Order a quick combo meal to office
 
 ---
 
-### 🛒 Instamart Workflows
+### Instamart Workflows
 
-#### 🍛 Recipe-to-Cart
+#### Recipe-to-Cart
 > Planning dinner, need all ingredients in one go.
 
 ```
@@ -190,7 +215,7 @@ I'm making Thai Green Curry tonight for 4 people. Can you search for the recipe,
 and let me know what items I need. Use my home address and add everything to cart.
 ```
 
-#### 🥗 Dietary-Compliant Shopping
+#### Dietary-Compliant Shopping
 > Following specific diet (keto, vegan, diabetic, gluten-free)
 
 ```
@@ -198,7 +223,7 @@ I'm on a keto diet. Can you help me build a diet chart and the items I need for 
 Make sure everything is low-carb and add to cart for my home address.
 ```
 
-#### 📦 Weekly Meal Prep
+#### Weekly Meal Prep
 > Sunday bulk cooking for the work week
 
 ```
@@ -210,7 +235,7 @@ I'm doing meal prep for 5 days. I need:
 Deliver to my home address.
 ```
 
-#### 🎉 Party Shopping
+#### Party Shopping
 > Hosting a weekend gathering
 
 ```
@@ -223,7 +248,7 @@ I'm hosting a party for 15 people. Help me shop for:
 I need delivery to my home address.
 ```
 
-#### 💰 Budget Shopping
+#### Budget Shopping
 > Student/tight budget, need to stay under limit
 
 ```
@@ -236,7 +261,7 @@ I have ₹500 budget for the week. Help me shop smart:
 Show me the cart total and help me stay within budget. Home address.
 ```
 
-#### 🏷️ Brand Comparison
+#### Brand Comparison
 > Price-conscious shopping, comparing options
 
 ```
@@ -247,11 +272,48 @@ I want to compare brands and prices for my monthly staples:
 Show me options and help me pick the best value. Deliver to home.
 ```
 
+---
+
+### Dineout Workflows
+
+#### Weekend Dinner Plans
+> Finding and booking a table for date night
+
+```
+I want to take my partner out for dinner this Saturday evening around 8 PM. 
+Find me good Italian restaurants in Koramangala with romantic ambiance. 
+Check availability and book a table for 2 if there are slots.
+```
+
+#### Group Celebration
+> Booking for friends or family gatherings
+
+```
+We're celebrating a birthday with 6 friends this Friday at 7:30 PM. 
+Find restaurants in Indiranagar that serve North Indian food, have good ratings, 
+and can accommodate a group. Check which ones have free booking slots and reserve a table.
+```
+
+#### Exploring New Restaurants
+> Discovering dining options with offers
+
+```
+I'm looking to try new restaurants in Whitefield this week. Show me top-rated places 
+with active dineout offers. I prefer continental or Asian cuisine. 
+What are my options for dinner tomorrow at 8 PM?
+```
+
 ## Tips for Best Results
 
-- **Be Specific** - Mention quantities, brands if you have preferences
+**For Food & Instamart:**
+- **Be Specific** - Mention quantities, brands, dietary preferences
 - **Provide Address Early** - "Use my home address" or "deliver to office"
-- **Check Cart** - Always ask AI to show cart before checkout
+- **Check Cart** - Always review cart before checkout
+
+**For Dineout:**
+- **Specify Locality** - Mention area/neighborhood (e.g., "Koramangala", "Indiranagar")
+- **State Party Size** - Number of people and date/time
+- **Free Bookings Only** - Currently supports free reservations
 
 ## Important Notes
 
@@ -262,4 +324,3 @@ Show me options and help me pick the best value. Deliver to home.
 ⚠️ **COD Orders** - Be careful as it can place orders on your behalf under COD. Orders placed cannot be cancelled, so always review your cart before checkout.
 
 **Support** - For issues or integration questions, contact the Swiggy developer team.
-

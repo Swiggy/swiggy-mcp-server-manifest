@@ -20,7 +20,7 @@ Your favorite restaurants delivered to your doorstep.
 
 ### Instamart
 
-10 min delivery for all your essentials at your fingertips.
+get delivery of groceries & more to your doorstep in mins!
 
 **Available Tools:**
 
@@ -60,15 +60,32 @@ The following redirect URIs are whitelisted for MCP authentication:
 - `http://127.0.0.1`
 - `http://127.0.0.1/callback`
 
-Contact the Swiggy team if you need additional URIs whitelisted.
+Contact us if you need additional URIs whitelisted.
 
-### Setup Instructions
+## Setup Instructions
 
-#### For Cursor Users
+### Add Swiggy MCPs to Cursor
+
+### Swiggy Food
+[![Add to Cursor](https://cursor.sh/assets/add_to_cursor_dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9)
+
+### Swiggy Dineout
+[![Add to Cursor](https://cursor.sh/assets/add_to_cursor_dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9)
+
+### Swiggy Instamart
+[![Add to Cursor](https://cursor.sh/assets/add_to_cursor_dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ==)
+
+
+### OR
 
 **Quick Install:** Copy and paste this link in your browser:
 
+
 ```
+cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9
+
+cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
+
 cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ==
 ```
 

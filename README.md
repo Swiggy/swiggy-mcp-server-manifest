@@ -6,7 +6,7 @@ Order food, groceries and more through intelligent MCP server integrations.
 
 ### Swiggy Food
 
-Your favorite restaurants delivered to your doorstep.
+Food you 🧡, on time
 
 **Restaurant Search** - Discover restaurants by cuisine, name, or dish
 
@@ -14,21 +14,19 @@ Your favorite restaurants delivered to your doorstep.
 
 **Cart Management** - Add items, customize orders, and view bill breakdown
 
-**Order Placement** - Seamlessly checkout and place food delivery orders
+**Food Ordering** - Place orders seamlessly with order tracking support (currently supports COD only)
 
 ---
 
 ### Instamart
 
-get delivery of groceries & more to your doorstep in mins!
+Get groceries & more, delivered in mins!
 
-**Available Tools:**
+**Product Search** - Find products by name, category, or brand at your delivery location
 
-- **`get_addresses`** - Retrieves user's saved delivery addresses
-- **`search_products`** - Searches available products by query at a specific delivery address
-- **`get_cart`** - Fetches current cart state with items, pricing, and bill breakdown
-- **`update_cart`** - Replaces entire cart with specified items
-- **`checkout`** - Creates order and confirms payment (currently supports COD only)
+**Cart Management** - View cart items, pricing, and bill breakdown with detailed cost analysis
+
+**Order Placement** - Seamlessly checkout and place grocery orders with instant confirmation (currently supports COD only)
 
 ---
 
@@ -36,12 +34,13 @@ get delivery of groceries & more to your doorstep in mins!
 
 Reserve tables at your favorite restaurants instantly.
 
-**Available Tools:**
+**Restaurant Discovery** - Find nearby restaurants based on your location and preferences
 
-- **`search_restaurants`** - Find restaurants by name, cuisine, or locality
-- **`get_restaurant_details`** - View restaurant info, menu, ratings, and exclusive offers
-- **`get_available_slots`** - Check available booking time slots for a specific date
-- **`book_table`** - Reserve a table instantly (supports free bookings only)
+**Restaurant Details** - Browse through detailed menus with prices, ratings, and exclusive offers
+
+**Slot Availability** - Check available booking time slots for your preferred date
+
+**Table Booking** - Reserve tables instantly with seamless booking support (supports free bookings only)
 
 ## Getting Started
 
@@ -66,19 +65,36 @@ Contact us if you need additional URIs whitelisted.
 
 ### Add Swiggy MCPs to Cursor
 
-### Swiggy Food
+### Food
 [![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
 https://cursor.com/en-US/install-mcp?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9
 )
 
-### Swiggy Dineout
+### Dineout
 [![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
 https://cursor.com/en-US/install-mcp?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
 )
 
-### Swiggy Instamart
+### Instamart
 [![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
 https://cursor.com/en-US/install-mcp?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ%3D%3D
+)
+
+### Add Swiggy MCP Servers to VS Code
+
+### Food
+[![Install MCP Server](https://img.shields.io/badge/Install-MCP-blue)](
+https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-food%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Food%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Ffood%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22food%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D
+)
+
+### Dineout
+[![Install MCP Server](https://img.shields.io/badge/Install-MCP-blue)](
+https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-dineout%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Dineout%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Fdineout%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22dineout%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D
+)
+
+### Instamart
+[![Install MCP Server](https://img.shields.io/badge/Install-MCP-blue)](
+https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-instamart%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Instamart%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Fim%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22instamart%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D
 )
 
 ### OR

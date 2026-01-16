@@ -67,26 +67,36 @@ Contact us if you need additional URIs whitelisted.
 ### Add Swiggy MCPs to Cursor
 
 ### Swiggy Food
-[![Add to Cursor](https://cursor.sh/assets/add_to_cursor_dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
+https://cursor.com/en-US/install-mcp?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9
+)
 
 ### Swiggy Dineout
-[![Add to Cursor](https://cursor.sh/assets/add_to_cursor_dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9)
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
+https://cursor.com/en-US/install-mcp?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
+)
 
 ### Swiggy Instamart
-[![Add to Cursor](https://cursor.sh/assets/add_to_cursor_dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ==)
-
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
+https://cursor.com/en-US/install-mcp?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ%3D%3D
+)
 
 ### OR
 
 **Quick Install:** Copy and paste this link in your browser:
 
-
+**Food -**
 ```
 cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9
-
-cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
-
+```
+**Instamart -**
+```
 cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ==
+```
+
+**Dineout -**
+```
+cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
 ```
 
 **Manual Setup:** Update your `mcp.json` configuration file located in `~/.cursor/mcp.json` with:

@@ -65,37 +65,13 @@ Contact us if you need additional URIs whitelisted.
 
 ### Add Swiggy MCPs to Cursor
 
-### Food
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
-https://cursor.com/en-US/install-mcp?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9
-)
-
-### Dineout
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
-https://cursor.com/en-US/install-mcp?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
-)
-
-### Instamart
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](
-https://cursor.com/en-US/install-mcp?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ%3D%3D
-)
+| Food | Dineout | Instamart |
+|:----:|:-------:|:---------:|
+| [![Install](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9) | [![Install](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9) | [![Install](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ%3D%3D) |
 
 ### Add Swiggy MCP Servers to VS Code
 
-### Food
-[![Install MCP Server](https://img.shields.io/badge/Install-MCP-blue)](
-https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-food%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Food%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Ffood%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22food%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D
-)
-
-### Dineout
-[![Install MCP Server](https://img.shields.io/badge/Install-MCP-blue)](
-https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-dineout%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Dineout%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Fdineout%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22dineout%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D
-)
-
-### Instamart
-[![Install MCP Server](https://img.shields.io/badge/Install-MCP-blue)](
-https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-instamart%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Instamart%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Fim%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22instamart%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D
-)
+[![Install Food](https://img.shields.io/badge/Install-Food-blue)](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-food%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Food%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Ffood%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22food%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D) &nbsp; [![Install Dineout](https://img.shields.io/badge/Install-Dineout-blue)](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-dineout%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Dineout%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Fdineout%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22dineout%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D) &nbsp; [![Install Instamart](https://img.shields.io/badge/Install-Instamart-blue)](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22swiggy-instamart%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Swiggy%20Instamart%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.swiggy.com%2Fim%22%2C%22author%22%3A%22Swiggy%22%2C%22tags%22%3A%5B%22swiggy%22%2C%22instamart%22%2C%22mcp%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D)
 
 ### OR
 

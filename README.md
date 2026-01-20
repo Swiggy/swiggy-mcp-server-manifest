@@ -99,22 +99,6 @@ https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22h
 
 ### OR
 
-**Quick Install:** Copy and paste this link in your browser:
-
-**Food -**
-```
-cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-food&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZm9vZCJ9
-```
-**Instamart -**
-```
-cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-instamart&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vaW0ifQ==
-```
-
-**Dineout -**
-```
-cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eXBlIjoiaHR0cCIsInVybCI6Imh0dHBzOi8vbWNwLnN3aWdneS5jb20vZGluZW91dCJ9
-```
-
 **Manual Setup:** Update your `mcp.json` configuration file located in `~/.cursor/mcp.json` with:
 
 ```json
@@ -138,32 +122,16 @@ cursor://anysphere.cursor-deeplink/mcp/install?name=swiggy-dineout&config=eyJ0eX
 
 Save the file and reload Cursor to activate the integration.
 
-#### For Claude Desktop Users
+#### For Claude Pro Desktop Users
 
 1. Open Claude Desktop
-2. Go to **Settings → Developer → Edit Config**
-3. Add the following to `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "swiggy-instamart": {
-      "type": "http",
-      "url": "https://mcp.swiggy.com/im"
-    },
-    "swiggy-food": {
-      "type": "http",
-      "url": "https://mcp.swiggy.com/food"
-    },
-    "swiggy-dineout": {
-      "type": "http",
-      "url": "https://mcp.swiggy.com/dineout"
-    }
-  }
-}
-```
-
-4. Save and restart Claude Desktop
+2. Go to **Settings → Connectors → Add custom connector**
+3. Add any Name
+4. Add the URL:
+   - Food: `https://mcp.swiggy.com/food`
+   - Instamart: `https://mcp.swiggy.com/im`
+   - Dineout: `https://mcp.swiggy.com/dineout`
+5. Save and Restart Claude
 
 #### Other MCP Clients
 

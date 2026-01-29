@@ -139,6 +139,8 @@ Save the file and reload Cursor to activate the integration.
 
 Add this to your MCP manifest:
 
+PS: we only support - claude, cursor, vscode, raycast, windsurf, kiro
+
 ```json
 {
   "mcpServers": {

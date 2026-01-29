@@ -1,5 +1,6 @@
 # Swiggy MCP Server
 
+
 Order food, groceries and more through intelligent MCP server integrations.
 
 ## Supported Features
@@ -46,10 +47,11 @@ Reserve tables at your favorite restaurants instantly.
 
 ### Supported OAuth Redirect URIs
 
+PS: avoid ChatGPT right now since there are some issues with tool calls and it being a bit buggy with mcp's. More details - https://community.openai.com/t/issues-with-unstable-natural-language-invocation-and-duplicate-tool-calls/1370573/11
+
 The following redirect URIs are whitelisted for MCP authentication:
 
 - `claude://claude.ai/settings/connectors`
-- `https://chatgpt.com/connector_platform_oauth_redirect`
 - `https://claude.ai/api/mcp/auth_callback`
 - `https://insiders.vscode.dev/redirect`
 - `https://oauth.pstmn.io/v1/callback`

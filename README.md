@@ -137,28 +137,36 @@ Save the file and reload Cursor to activate the integration.
 
 #### Other MCP Clients
 
-Add this to your MCP manifest:
+#### Usage with Gemini CLI
 
-PS: we only support - claude, cursor, vscode, raycast, kiro
+1.  **Locate your Gemini settings folder**, which is typically at `~/.gemini/`.
 
-```json
-{
-  "mcpServers": {
-    "swiggy-instamart": {
-      "type": "http",
-      "url": "https://mcp.swiggy.com/im"
-    },
-    "swiggy-food": {
-      "type": "http",
-      "url": "https://mcp.swiggy.com/food"
-    },
-    "swiggy-dineout": {
-      "type": "http",
-      "url": "https://mcp.swiggy.com/dineout"
+2.  **Create or update your settings file.** Inside the `.gemini` folder, create a file named `settings.json` if it doesn't exist.
+
+3.  **Add the MCP server configurations.** Add the following JSON content to your `settings.json` file. If the file already has content, merge the `mcpServers` object into the existing JSON.
+
+    ```json
+    {
+      "mcpServers": {
+        "swiggy-instamart": {
+          "type": "http",
+          "url": "https://mcp.swiggy.com/im"
+        },
+        "swiggy-food": {
+          "type": "http",
+          "url": "https://mcp.swiggy.com/food"
+        },
+        "swiggy-dineout": {
+          "type": "http",
+          "url": "https://mcp.swiggy.com/dineout"
+        }
+      }
     }
-  }
-}
-```
+    ```
+
+4.  **Authenticate.** The first time Gemini CLI detects Swiggy MCP server, it will ask you to explicitly authenticate with any of the Swiggy MCP servers using: `/mcp auth <server-name>` (e.g., `/mcp auth swiggy-instamart`)
+
+That's it! You can now use the Swiggy tools from your terminal.
 
 ## Workflows You Can Try
 

@@ -2,6 +2,17 @@
 
 Order food, groceries and more through intelligent MCP server integrations.
 
+## Build with Swiggy MCP
+
+- **Builders Website** - Learn more about building on the Swiggy MCP platform: [http://mcp.swiggy.com/builders/](http://mcp.swiggy.com/builders/)
+- **Access Request Form** - Apply for builder access here: [http://mcp.swiggy.com/builders/access/](http://mcp.swiggy.com/builders/access/)
+
+### ChatGPT Plugin
+
+The Swiggy MCP plugin is currently available on ChatGPT for **Swiggy Food only**. Users can discover restaurants, browse menus, manage their cart, and place food orders directly from ChatGPT.
+
+**Plugin Link:** [Swiggy Food on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a3de8146ae4819186b6799a5d907074)
+
 ## Supported Features
 
 ### Swiggy Food
@@ -325,17 +336,6 @@ What are my options for dinner tomorrow at 8 PM?
 - **Specify Locality** - Mention area/neighborhood (e.g., "Koramangala", "Indiranagar")
 - **State Party Size** - Number of people and date/time
 - **Free Bookings Only** - Currently supports free reservations
-
-## Build with Swiggy MCP
-
-- **Builders Website** - Learn more about building on the Swiggy MCP platform: [http://mcp.swiggy.com/builders/](http://mcp.swiggy.com/builders/)
-- **Access Request Form** - Apply for builder access here: [http://mcp.swiggy.com/builders/access/](http://mcp.swiggy.com/builders/access/)
-
-### ChatGPT Plugin
-
-The Swiggy MCP plugin is currently available on ChatGPT for **Swiggy Food only**. Users can discover restaurants, browse menus, manage their cart, and place food orders directly from ChatGPT.
-
-**Plugin Link:** [Swiggy Food on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a3de8146ae4819186b6799a5d907074)
 
 ## Important Notes
 

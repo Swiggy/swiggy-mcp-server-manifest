@@ -155,6 +155,49 @@ Add this to your MCP manifest:
 }
 ```
 
+## Response Contract: Handling `content` vs `structuredContent`
+
+Swiggy MCP servers return two distinct payloads in tool execution responses:
+
+1. **`content` (Prose for Conversational Relay)**: Natural-language text tailored for LLM chat models to read and relay to users. Programmatic clients must **not** run `JSON.parse()` on `content[0].text`.
+2. **`structuredContent` (Machine-Readable JSON)**: The typed JSON object containing raw domain entities (such as `addresses`, `cart`, `items`, `pricing`, `pagination`, and `resolution`). Non-chat agents, background pipelines, and programmatic MCP clients should **always read `structuredContent`**.
+
+### Programmatic Client Parsing Pattern
+
+#### TypeScript / JavaScript
+```typescript
+const response = await mcpClient.callTool({
+  name: "get_addresses",
+  arguments: {}
+});
+
+// ✅ CORRECT: Extract machine-readable JSON directly from structuredContent
+const addressData = response.structuredContent ?? (
+  typeof response.content?.[0]?.text === "string" && response.content[0].text.startsWith("{")
+    ? JSON.parse(response.content[0].text)
+    : null
+);
+
+console.log("Addresses:", addressData?.addresses);
+
+// ❌ WRONG: Calling JSON.parse() on response.content[0].text will throw SyntaxError
+// JSON.parse(response.content[0].text); // Throws: Unexpected token 'F', "Found 24 s"...
+```
+
+#### Python
+```python
+response = await mcp_client.call_tool("get_addresses", {})
+
+# ✅ CORRECT: Access structuredContent dictionary directly
+address_data = getattr(response, "structuredContent", None) or {}
+addresses = address_data.get("addresses", [])
+
+# ❌ WRONG: Attempting json.loads on prose content
+# json.loads(response.content[0].text) # Raises json.decoder.JSONDecodeError
+```
+
+---
+
 ## Workflows You Can Try
 
 ### Food Ordering Workflows

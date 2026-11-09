@@ -7,11 +7,23 @@ Order food, groceries and more through intelligent MCP server integrations.
 - **Builders Website** - Learn more about building on the Swiggy MCP platform: [http://mcp.swiggy.com/builders/](http://mcp.swiggy.com/builders/)
 - **Access Request Form** - Apply for builder access here: [http://mcp.swiggy.com/builders/access/](http://mcp.swiggy.com/builders/access/)
 
-### ChatGPT Plugin
+### ChatGPT Plugins
 
-The Swiggy MCP plugin is currently available on ChatGPT for **Swiggy Food only**. Users can discover restaurants, browse menus, manage their cart, and place food orders directly from ChatGPT.
+Swiggy Food, Swiggy Instamart and Swiggy Dineout are available as plugins in the ChatGPT plugin directory, so there's no config to paste.
 
-**Plugin Link:** [Swiggy Food on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a3de8146ae4819186b6799a5d907074)
+| Plugin | What you can do | Link |
+|--------|-----------------|------|
+| Swiggy Food | Discover restaurants, browse menus, manage your cart and place food orders | [Swiggy Food on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6a3de8146ae4819186b6799a5d907074) |
+| Swiggy Instamart | Search products, manage your cart, place orders and track deliveries | [Swiggy Instamart on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6ac4a11bbd3481918ec1ccd4e2c2b169) |
+| Swiggy Dineout | Find restaurants, check table availability and manage bookings | [Swiggy Dineout on ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6aec7619ccb8819188ada8235b6efe8d) |
+
+To get started:
+
+1. Open the plugin you want and click **Install plugin**
+2. Sign in with your Swiggy phone number and OTP when prompted
+3. Mention the plugin by name in any chat, for example *"@Swiggy Food order my favourite biryani"*
+
+If your ChatGPT workspace admin has turned off plugins, the plugin page shows it as disabled. Ask your admin to allow it.
 
 ## Supported Features
 
